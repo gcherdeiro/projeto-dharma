@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharma-Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Cadastro de Cliente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="" autocomplete="off" id="fcadastro">
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control required" name="nome" placeholder="Nome">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control required email" name="email"
+                                    placeholder="E-mail">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control required dateBR" name="data"
+                                    placeholder="Data de Nascimento" id="data">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control required cpf" name="cpf" placeholder="CPF"
+                                    id="cpf">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control required" name="cep" placeholder="CEP" id="cep"
+                                    maxlength="8">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control required" name="logradouro" id="logradouro" placeholder="Logradouro">
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control required" name="numero" id="numero" placeholder="Número">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="complemento" placeholder="Complemento">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-5">
+                                <input type="text" class="form-control required" name="bairro" id="bairro" placeholder="Bairro">
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control required" name="cidade" id="cidade" placeholder="Cidade">
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control required" name="uf" id="uf" placeholder="UF">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-dark btn-block">Enviar</button>
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo da empresa Dharma.">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav text-uppercase">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Link dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Ação</a>
+                            <a class="dropdown-item" href="#">Outra ação</a>
+                            <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- <img src="img/banner-1.jpg" alt="" class="w-100"> -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/banner-1.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit.</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi quam deserunt minima,
+                        quo ipsa.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/banner-2.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit.</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi quam deserunt minima,
+                        quo ipsa.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/banner-3.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit.</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi quam deserunt minima,
+                        quo ipsa.</p>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <div class="bg-claro w-100">
+
+        <div class="container">
+
+            <article class="justify-content-between row pt-5 pb-5 align-items-center">
+
+                <section class="col-md-6 col-lg-5" id="bg-text">
+                    <h1 class="text-uppercase pb-4">Lorem ipsum</h1>
+                    <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book.
+
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining
+                        essentially unchanged.
+                    </p>
+                    <button type="button" class="btn btn-dark" data-toggle="modal"
+                        data-target="#cadastro">Cadastre-se</button>
+                </section>
+
+                <section class="col-md-6 col-lg-5 bg-claro-img">
+                    <img src="img/dharma.jpg" alt="">
+                </section>
+
+            </article>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <article class="row pt-5 pb-5 text-center">
+
+            <section class="col-md-6 col-lg-3 coluna">
+                <img src="img/icon-1.png" alt="">
+                <h2 class="pt-2 pb-2">Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mauris turpis, semper.</p>
+                <button type="button" class="btn btn-dark">Lorem Ipsum</button>
+            </section>
+            <section class="col-md-6 col-lg-3 coluna">
+                <img src="img/icon-2.png" alt="">
+                <h2 class="pt-2 pb-2">Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mauris turpis, semper.</p>
+                <button type="button" class="btn btn-dark">Lorem Ipsum</button>
+            </section>
+            <section class="col-md-6 col-lg-3 coluna">
+                <img src="img/icon-3.png" alt="">
+                <h2 class="pt-2 pb-2">Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mauris turpis, semper.</p>
+                <button type="button" class="btn btn-dark">Lorem Ipsum</button>
+            </section>
+            <section class="col-md-6 col-lg-3 coluna">
+                <img src="img/icon-4.png" alt="">
+                <h2 class="pt-2 pb-2">Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mauris turpis, semper.</p>
+                <button type="button" class="btn btn-dark">Lorem Ipsum</button>
+            </section>
+
+        </article>
+
+    </div>
+
+    <div class="bg-escuro w-100">
+
+        <article class="container pt-5 pb-5 text-center">
+
+            <h2 class="pb-4">Lorem Ipsum</h2>
+            <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged.
+            </p>
+            <button type="button" class="btn btn-light">Lorem Ipsum</button>
+
+        </article>
+
+    </div>
+
+    <div class="bg-rodape text-center text-md-left">
+
+        <div class="container">
+
+            <footer class="row py-5">
+
+                <section class="col-md-4">
+                    <h2 class="pb-4">Lorem Ipsum</h2>
+                    <ul>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                    </ul>
+                </section>
+                <section class="col-md-4">
+                    <h2 class="pb-4">Lorem Ipsum</h2>
+                    <ul>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                    </ul>
+                </section>
+                <section class="col-md-4">
+                    <h2 class="pb-4">Lorem Ipsum</h2>
+                    <ul>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                        <li>dolor sit amet consectetur adipiscing</li>
+                    </ul>
+                </section>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/maskedinput-1.4.1.js"></script> -->
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+
+    <!-- Inicialização do jquery -->
+    <script>
+       $(document).ready(function(){
+            //console.log('ok');
+
+            $("#data").mask("99/99/9999");
+            $("#cpf").mask("999.999.999-99");
+
+            $("#fcadastro").validate();
+
+
+            //ao soltar uma tecla
+
+            $("#cep").keyup(function(){
+
+                var cepDigitado = $("#cep").val();
+
+                if (cepDigitado.length == 8){
+
+                    $.getJSON("https://viacep.com.br/ws/"+cepDigitado+"/json/",
+                        function (dados){
+                            console.log(dados);
+
+                            if(!dados.erro){
+                                $("#logradouro").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#uf").val(dados.uf);
+                                $("#numero").focus();
+                            }else{
+                                alert('CEP não encontrado!');
+                            }
+
+                        });
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
